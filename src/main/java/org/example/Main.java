@@ -46,8 +46,8 @@ public class Main {
             long percentileFlightTime = flightTimes.get(percentileIndex - 1);
 
             // вывод результатов
-            System.out.println("Среднее время полета между городами " + originCity + " и " + destinationCity + " равно " + averageFlightTime + " минут.");
-            System.out.println("90-й процентиль времени полета между городами " + originCity + " и " + destinationCity + " равен " + percentileFlightTime + " минут.");
+            System.out.println("Среднее время полета между Владивастоком и Тель-Авивом равно " + averageFlightTime + " минут.");
+            System.out.println("90-й процентиль времени полета между Владивастоком и Тель-Авивом равен " + percentileFlightTime + " минут.");
 
         } catch (Exception e) {
             e.printStackTrace();
