@@ -14,11 +14,10 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
 
-        String fileName = "tickets.json";
         String originCity = "VVO";
         String destinationCity = "TLV";
 
-        try (FileReader fileReader = new FileReader(fileName)) {
+        try (FileReader fileReader = new FileReader(args[0])) {
             // чтение данных из файла
             JSONParser parser = new JSONParser();
             JSONObject jsonData = (JSONObject) parser.parse(fileReader);
